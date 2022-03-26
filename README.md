@@ -9,3 +9,7 @@ When I stumbled upon the code today, it was great to look over and see how far i
 
 If you would like to check the game out 
 [click here](https://tmeyer01.github.io/AsteroidDefender/)
+
+![Screen Shot 2022-03-26 at 12 05 38 PM](https://user-images.githubusercontent.com/79067458/160253664-54859655-378b-4052-af10-600f6053f754.png)
+![Screen Shot 2022-03-26 at 12 00 22 PM](https://user-images.githubusercontent.com/79067458/160253665-1761644f-c701-47d2-9fad-780e427717d1.png)
+![Screen Shot 2022-03-26 at 12 00 31 PM](https://user-images.githubusercontent.com/79067458/160253667-ede007c6-af8f-44db-bde6-a30c96c4b335.png)
