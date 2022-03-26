@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Asteroid Defender</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./adcss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+
+
+<body onload="TitleScreen()">
+  <div id="wrapper">
+        <header id="header">
+               
+        </header>
+        
+    <nav>
+            <ul>
+                <li> <button id="startGameButton" onclick="StartGame()">Click to start game</button></li>
+                <li> <button id="myBtn">How to play</button> </li> 
+                <li> <button id="credBtn">Credits</button> </li>
+            </ul>
+    </nav> 
+
+
+    <main id="main">
+                
+                <div class="container">
+                    <div class="score"><h1><span>SCORE: </span><span id="scoreEl">0</span></h1></div>
+                    <div class="lives"><h1><span>LIVES: </span><span id="livesEl">3</h1></span></div>
+                    <canvas id="drawingCanvas" width = "800" height = "800" style="border-style: solid"></canvas>
+                </div>
+
+                <!-- width = "800" height = "800" style="border-style: solid" -->
+
+                <div style="display:none;">
+                    <img id="source"
+                        src="./TitleScreen/MainScreen.jpg"
+                        width="400" height="600">
+                </div>
+
+                <div style="display:none;">
+                    <img id="gaveOver"
+                        src="./TitleScreen/GameOver.jpg"
+                        width="400" height="600">
+                </div>
+
+                <audio id="themeMusic"><source src="./sounds/thememusic.mp3" type="audio/mpeg"></audio>    
+                <audio id="laser"><source src="./sounds/laser.mp3" type="audio/mpeg"> </audio>
+                <audio id="astroideHit"><source src="./sounds/astroideHit.mp3" type="audio/mpeg"> </audio>
+                <audio id="hitGround"><source src="./sounds/hitGround.mp3" type="audio/mpeg"> </audio>
+                <audio id="gameOverTheme"><source src="./sounds/gameover.mp3" type="audio/mpeg"></audio> 
+
+    </main> 
+    
+            <footer>
+
+
+            </footer>
+    
+
+                       
+                    <div id="howToPlayModal" class="modal">
+
+                        
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><h3>How to play:</h3>
+                            Start the game by clicking on the Start Game button.<br>
+                            <br>
+                            Asteroids, will start to fall from the sky.<br>
+                            Move the Defender and fire bullets at the asteriods to destroy them.<br>
+                            <br>
+                            You have three lives. When an Asteroid hits the ground you will lose a life.
+                            <br>
+                            Watch out; once your score reaches 2500 points Asteroids will start to fall faster.<br> 
+                            <br>
+                            <h3>Controls:</h3>
+                            To Move - <br>
+                            Use the "a" key to move left.<br>
+                            Use the "d" key to move right.<br>
+                            Click your mouse anywhere inside the canvas shoot.<br>
+                            <br>
+                            <br>
+                            <b>Good luck. The fate of the earth is in your hands!</b>
+                        </p>    
+                        </div>
+                    
+                    </div>
+
+
+                    <div id="creditsModal" class="modal">
+
+                        
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><h3>Credit:</h3>
+                            Big shout out to Chris Courses on youtube. His HTML5 Canvas and JavaScript Game tutorial gave me a ton of insperation and ideas for this game i've created. A link to his video can be found <a href="https://www.youtube.com/watch?v=eI9idPTT0c4">here.. </a> <br>
+                            <br>
+                            Big thanks to https://www.zapsplat.com for the Free sounds effects. All they ask for is credit when using there sounds. So credit is given where credit is due.<br>
+                            <br> 
+                            Another big thanks to https://greensock.com/gsap/ for making my animations smoother. <br>
+                            <br>
+                            All games screens and graffics created by me Thomas Meyer.  
+                        </p>    
+                        </div>
+                    
+                    </div>
+
+
+
+
+
+
+
+
+
+            
+              
+            </div>
+
+
+
+
+
+
+
+    
+   </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    
+    <script src="./AD2.js"></script>
+</body>
+</html>
